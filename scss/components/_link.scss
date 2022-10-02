@@ -1,6 +1,6 @@
 .link {
   text-decoration: none;
-  color: $primary-text-color;
+  color: $bolded-text-color;
 
   &:focus,
   &:hover {
@@ -13,7 +13,7 @@
 
   &--active::after {
     position: absolute;
-    content: '';
+    content: "";
     background: $link-text-color;
     border-radius: 2px;
     border: 1px solid;
@@ -21,9 +21,9 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    transform: translateY(32px);
+    transform: translateY(33.6px);
   }
-  
+
   &:hover .header__icon {
     fill: $button-icon-color;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);

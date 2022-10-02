@@ -8,10 +8,10 @@ $button-icon-color: #2196f3;
 $button-text-color: #ffffff;
 $button-background: #f5f4fa;
 $button-border-close: rgba(0, 0, 0, 0.1);
-$btn-shadow-first:rgba(0, 0, 0, 0.1);
-$btn-shadow-second:rgba(0, 0, 0, 0.08);
-$btn-shadow-third:rgba(0, 0, 0, 0.12);
-$btn-shadow-single:gba(0, 0, 0, 0.15);
+$btn-shadow-first: rgba(0, 0, 0, 0.1);
+$btn-shadow-second: rgba(0, 0, 0, 0.08);
+$btn-shadow-third: rgba(0, 0, 0, 0.12);
+$btn-shadow-single: gba(0, 0, 0, 0.15);
 $logo-primary-color: #ffffff;
 $logo-secondary-color: #000000;
 $icon-fill-primary: #afb1b8;
@@ -20,30 +20,29 @@ $form-std-color: rgba(117, 117, 117, 0.5);
 $modal-background-color: rgba(0, 0, 0, 0.2);
 $modal-box-shadow-primary: rgba(0, 0, 0, 0.12);
 $modal-box-shadow-secondary: rgba(0, 0, 0, 0.14);
-$section-top-background: #2f303a66;
+$section-top-background: #2f303a;
 $footer-link-color: rgba(255, 255, 255, 0.6);
 $footer-input-color: rgba(255, 255, 255, 0.3);
 $footer-shadow-color: rgba(0, 0, 0, 0.15);
 $footer-icon-background: rgba(255, 255, 255, 0.1);
 $figure-background: rgba(47, 48, 58, 0.8);
-$product-border:#eeeeee;
-$image-shadow-secondary:rgba(0, 0, 0, 0.06);
-$image-shadow-thrid:rgba(0, 0, 0, 0.16);
+$product-border: #eeeeee;
+$image-shadow-secondary: rgba(0, 0, 0, 0.06);
+$image-shadow-thrid: rgba(0, 0, 0, 0.16);
 
-
-$site-fonts: 'Roboto', 'Raleway', sans-serif;
+$site-fonts: "Roboto", "Raleway", sans-serif;
 
 $font-size: (
-  'body-size': 14px,
-  'button': 16px,
-  'footer': 14px,
-  'form-header':20px,
-  'form-lbl':12px,
-  'form-terms':14px,
-  'overlay':18px,
-  'img-heading':16px,
-  'main-header':36px,
-  'top-section':44px,
-  'product-desc':14px,
-  'logo':26px,
+  "body-size": 14px,
+  "button": 16px,
+  "footer": 14px,
+  "form-header": 20px,
+  "form-lbl": 12px,
+  "form-terms": 14px,
+  "overlay": 18px,
+  "img-heading": 16px,
+  "main-header": 36px,
+  "top-section": 44px,
+  "product-desc": 14px,
+  "logo": 26px,
 );

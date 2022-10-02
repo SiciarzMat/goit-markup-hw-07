@@ -8,7 +8,7 @@
 
   &__header {
     @include font-atr(700, 1.15, 0.03em);
-    font-size: get-size('form-header');
+    font-size: get-size("form-header");
     text-align: center;
     color: $bolded-text-color;
     margin: 40px 0 12px 0;
@@ -16,7 +16,7 @@
 
   &__lbl {
     @include font-atr(400, 1.17, 0.01em);
-    font-size: get-size('form-lbl');
+    font-size: get-size("form-lbl");
     width: 100%;
     position: relative;
   }
@@ -36,7 +36,7 @@
     @include font-atr(400, 1.17, 0.01em);
     resize: none;
     height: 120px;
-    font-size: get-size('form-lbl');
+    font-size: get-size("form-lbl");
     padding: 12px 16px;
     color: $form-std-color;
   }
@@ -45,7 +45,7 @@
     @include font-atr(400, 1.71, 0.03em);
     @include set-flex(row);
     margin: 10px 0 20px 0;
-    font-size: get-size('form-terms');
+    font-size: get-size("form-terms");
     width: 100%;
     position: relative;
   }

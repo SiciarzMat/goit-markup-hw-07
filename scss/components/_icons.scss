@@ -3,12 +3,13 @@
   fill: $icon-fill-primary;
   transition-property: background-color;
   @include vis-effect();
-  
+
   &-send {
     width: 60px;
     height: 40px;
     margin-left: 24px;
     position: absolute;
+    margin-top: 5px;
   }
 
   &--social {
@@ -25,7 +26,7 @@
       background-color: $button-icon-color;
     }
   }
-  
+
   &--activities {
     border: 1px solid $icon-fill-primary;
     border-radius: 4px;

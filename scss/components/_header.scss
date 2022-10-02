@@ -2,7 +2,7 @@
   border-bottom: 1px solid $header-border-color;
 
   &__container {
-    @include set-flex(row,flex-start);
+    @include set-flex(row, flex-start);
     align-content: center;
     padding: 24px 0 25px;
     gap: 93px;
@@ -11,7 +11,6 @@
   }
 
   &__contact {
-    // display: flex;default: row (flex-direction),flex-start (justify-content), stretch (align-items)
     @include set-flex(row);
     column-gap: 50px;
     margin-left: auto;
@@ -19,15 +18,21 @@
     & .icon {
       margin-right: 10px;
     }
+
+    & .icon-email {
+      margin-top: 3px;
+    }
   }
 
   &__link {
-    @include set-flex(row,flex-start,stretch);
+    @include set-flex(row, flex-start, stretch);
+    @include font-atr(500, 1.14, 0.02em);
+    color: $primary-text-color;
   }
-  
+
   &__nav {
-    @include set-flex(row,flex-start,stretch);
-    @include font-atr(500,1.14,0.02em);
+    @include set-flex(row, flex-start, stretch);
+    @include font-atr(500, 1.14, 0.02em);
     color: $bolded-text-color;
     column-gap: 46px;
   }

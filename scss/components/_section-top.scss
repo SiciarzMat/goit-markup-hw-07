@@ -1,0 +1,32 @@
+.section-top {
+  width: 100%;
+  background-color: $section-background-color;
+
+  &__layout {
+    @include set-flex(column);
+    // display: flex;
+    // justify-content: center;
+    // flex-direction: column;
+    // align-items: center;
+    padding: 200px 0 200px;
+    width: 1600px;
+    background-color: $section-top-background;
+    background-image: url(../images/background.jpg);
+    background-blend-mode: darken;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  &__header {
+    @include font-atr(900,1.36,0.06em);
+    font-size: get-size('top-section');
+    text-align: center;
+    text-transform: uppercase;
+    color: $button-text-color;
+    margin: 0 0 40px;
+    display: block;
+  }
+}

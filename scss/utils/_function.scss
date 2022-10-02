@@ -1,0 +1,7 @@
+
+@function toRem($pxValue) {
+    @return calc($pxValue/16px)*1rem; 
+}
+@function get-size($key) {
+    @return map-get($font-size, $key);
+  }

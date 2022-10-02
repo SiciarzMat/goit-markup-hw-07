@@ -1,0 +1,89 @@
+
+%button__common {
+  cursor: pointer;
+  border-style: none;
+  font-size: get-size('button');
+  // font-size: toRem(get-size('button'));
+}
+
+.button {
+  @extend %button__common;
+  @include font-atr(700,1.88,0.06em);
+  //weight, height, spacing
+  width: 200px;
+  height: 50px;
+  background-color: $button-icon-color;
+  color: $button-text-color;
+  box-shadow: 0px 4px 4px $btn-shadow-single;
+  border-radius: 4px;
+  padding: 10px 0;
+  transition: background-color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid $button-icon-color;
+
+  &--color-main {
+    background-color: $button-icon-color;
+    transition: background-color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &--color-main:hover {
+    background-color: $section-background-color;
+    outline: none;
+  }
+  &--left {
+    padding: 0 0 0 42px;
+    text-align: left;
+  }
+}
+
+.button-secondary {
+  @extend %button__common;
+  @include font-atr(500,1.62,0.03em);
+  //weight, height, spacing
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: $bolded-text-color;
+  background-color: $button-background;
+  border-radius: 4px;
+  margin: 0 0 50px;
+  padding: 6px 22px;
+  transition-property: color, background-color, box-shadow;
+  @include vis-effect();
+  // transition-duration: 250ms;
+  // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    background-color: $button-icon-color;
+    color: $button-text-color;
+    outline-style: none;
+    box-shadow: 0px 3px 1px $btn-shadow-first, 0px 1px 2px $btn-shadow-second,
+      0px 2px 2px $btn-shadow-third;
+  }
+}
+.button-close {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: $primary-background-color;
+  border: 1px solid $button-border-close;
+  padding: 9px;
+  transition: background-color 1s ease, border 1s ease;
+
+  &:hover {
+    background-color: $section-background-color;
+    border: 1 px solid $button-icon-color;
+    fill: $button-text-color;
+  }
+  &__icon {
+    width: 11px;
+    height: 11px;
+    fill: $bolded-text-color;
+    transition: fill 1s ease;
+  }
+  &__icon:hover {
+    fill: $button-text-color;
+  }
+}

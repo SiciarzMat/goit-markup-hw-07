@@ -1,0 +1,31 @@
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+.backdrop {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: $modal-background-color;
+  transition: opacity 250ms ease, visibility 550ms ease;
+
+  &__modal {
+    @include set-flex(column,flex-start);
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    position: absolute;
+    width: 528px;
+    height: 581px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: $primary-background-color;
+    box-shadow: 0px 1px 3px $modal-box-shadow-primary, 0px 1px 1px $modal-box-shadow-secondary,
+      0px 2px 1px $modal-background-color;
+    border-radius: 4px;
+  }
+}

@@ -1,0 +1,110 @@
+.form {
+  @include set-flex(column, flex-start);
+  //flex-direction,justify-content,align-items
+  padding-left: 40px;
+  padding-right: 40px;
+  row-gap: 10px;
+  width: 100%;
+
+  &__header {
+    @include font-atr(700, 1.15, 0.03em);
+    font-size: get-size('form-header');
+    text-align: center;
+    color: $bolded-text-color;
+    margin: 40px 0 12px 0;
+  }
+
+  &__lbl {
+    @include font-atr(400, 1.17, 0.01em);
+    font-size: get-size('form-lbl');
+    width: 100%;
+    position: relative;
+  }
+
+  &__input {
+    border: 1px solid $input-border-color;
+    border-radius: 4px;
+    width: 100%;
+    margin-top: 4px;
+    padding-left: 42px;
+    height: 40px;
+    outline: none;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__text {
+    @include font-atr(400, 1.17, 0.01em);
+    resize: none;
+    height: 120px;
+    font-size: get-size('form-lbl');
+    padding: 12px 16px;
+    color: $form-std-color;
+  }
+
+  &__terms-and-cond {
+    @include font-atr(400, 1.71, 0.03em);
+    @include set-flex(row);
+    margin: 10px 0 20px 0;
+    font-size: get-size('form-terms');
+    width: 100%;
+    position: relative;
+  }
+
+  &__link {
+    color: $link-text-color;
+    font-weight: 400;
+    transition-property: font-weight, color;
+    @include vis-effect();
+  }
+
+  &__link:hover {
+    color: $bolded-text-color;
+    font-weight: 700;
+  }
+
+  &__input:focus {
+    border: 1px solid $button-icon-color;
+    border-radius: 4px;
+    outline: none;
+  }
+
+  &__input:focus ~ &__icon {
+    fill: $button-icon-color;
+  }
+
+  &__icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    width: 18px;
+    height: 18px;
+    fill: $bolded-text-color;
+  }
+
+  &__checkmark-icon {
+    width: 16px;
+    height: 15px;
+    margin-right: 8px;
+    fill: $bolded-text-color;
+    background-color: $primary-background-color;
+    fill: $primary-background-color;
+    padding-left: 2px;
+    padding-top: 3px;
+    border: 1px solid $logo-secondary-color;
+    border-radius: 2px;
+    left: 0;
+  }
+
+  &__checkbox {
+    opacity: 0;
+    height: 0;
+    width: 0;
+  }
+
+  &__checkbox:checked ~ &__checkmark-icon {
+    fill: $primary-background-color;
+    background-color: $button-icon-color;
+    border: 1px solid $button-icon-color;
+    border-radius: 2px;
+  }
+}

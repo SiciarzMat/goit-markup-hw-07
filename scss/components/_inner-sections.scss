@@ -1,0 +1,54 @@
+.section {
+  padding: 94px 0;
+
+  &__heading {
+    @include font-atr(700,1.17,0.03em);
+    font-size: get-size('main-header');
+    text-align: center;
+    color: $bolded-text-color;
+    margin: 0 0 50px;
+  }
+
+  &__container {
+    width: 1200px;
+    margin: 0 auto;
+
+    &--gap {
+      margin-bottom: 94px;
+    }
+  }
+  &:nth-child(2) {
+    padding-bottom: 0;
+  }
+
+  &__figure {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+
+  &__figure-desc {
+    @include font-atr(700,1.14,0.03em);
+    position: absolute;
+    font-size: get-size ('product-desc');
+    text-align: center;
+    text-transform: uppercase;
+    color: $button-text-color;
+    background: $figure-background;
+    padding: 27px 0;
+
+    width: 100%;
+    bottom: 0;
+  }
+
+  &--gray {
+    background-color: $button-background;
+    width: 100%;
+    padding: 94px 0;
+  }
+
+  &__list {
+    column-gap: 8px;
+  }
+}

@@ -2,8 +2,8 @@
   padding: 94px 0;
 
   &__heading {
-    @include font-atr(700,1.17,0.03em);
-    font-size: get-size('main-header');
+    @include font-atr(700, 1.17, 0.03em);
+    font-size: get-size("main-header");
     text-align: center;
     color: $bolded-text-color;
     margin: 0 0 50px;
@@ -29,9 +29,9 @@
   }
 
   &__figure-desc {
-    @include font-atr(700,1.14,0.03em);
+    @include font-atr(700, 1.14, 0.03em);
     position: absolute;
-    font-size: get-size ('product-desc');
+    font-size: get-size ("product-desc");
     text-align: center;
     text-transform: uppercase;
     color: $button-text-color;
@@ -49,6 +49,7 @@
   }
 
   &__list {
+    @extend .list;
     column-gap: 8px;
   }
 }

@@ -4,29 +4,30 @@
   padding: 60px 0;
 }
 .footer__address {
-  @include font-atr(400,1.71,0.03em);
-  @include set-flex(column,flex-start,stretch);
+  @include font-atr(400, 1.71, 0.03em);
+  @include set-flex(column, flex-start, stretch);
   row-gap: 9px;
   width: 246px;
   margin: 0;
 }
 .footer__location {
-  @include font-atr(400,1.71,0.03em);
+  @include font-atr(400, 1.71, 0.03em);
   color: $primary-background-color;
   margin: 20px 0 0 0;
 }
 .footer__link {
+  @extend .link;
   color: $footer-link-color;
 }
 .footer__heading {
-  @include font-atr(700,1.14,0.03em);
-  font-size: get-size('footer');
+  @include font-atr(700, 1.14, 0.03em);
+  font-size: get-size("footer");
   text-transform: uppercase;
   color: $primary-background-color;
   margin-bottom: 20px;
 }
 .footer__container {
-  @include set-flex(row,flex-start,baseline);
+  @include set-flex(row, flex-start, baseline);
   // display: flex;
   // align-items: baseline;
   width: 1200px;

@@ -14,23 +14,27 @@
     @include set-flex(row);
     column-gap: 50px;
     margin-left: auto;
+  }
 
-    & .icon {
-      margin-right: 10px;
-    }
+  &__icon {
+    @extend .icon;
+    margin-right: 10px;
+  }
 
-    & .icon-email {
-      margin-top: 2px;
-    }
+  &__icon--email {
+    @extend .header__icon;
+    margin-top: 2px;
   }
 
   &__link {
+    @extend .link;
     @include set-flex(row, flex-start, stretch);
     @include font-atr(500, 1.14, 0.02em);
     color: $primary-text-color;
   }
 
   &__nav {
+    @extend .list;
     @include set-flex(row, flex-start, stretch);
     @include font-atr(500, 1.14, 0.02em);
     color: $bolded-text-color;

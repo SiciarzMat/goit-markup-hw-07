@@ -20,6 +20,7 @@
   border: 1px solid $button-icon-color;
 
   &--color-main {
+    @extend .button;
     background-color: $button-icon-color;
     transition: background-color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -28,7 +29,9 @@
     background-color: $section-background-color;
     outline: none;
   }
-  &--left {
+  &--subscribe {
+    @extend .button;
+    @extend .button--color-main;
     padding: 0 0 0 42px;
     text-align: left;
   }
@@ -80,6 +83,7 @@
     fill: $button-icon-color;
   }
   &__icon {
+    @extend .icon;
     position: absolute;
     right: 8px;
     top: 9px;

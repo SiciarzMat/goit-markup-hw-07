@@ -5,7 +5,7 @@
   font-size: 14px;
 }
 
-.list {
+.list, .header__nav, .section__list, .list--gap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -74,11 +74,11 @@
   position: relative;
 }
 
-.link {
+.link, .footer__link, .header__link, .link--active {
   text-decoration: none;
   color: #212121;
 }
-.link:focus, .link:hover {
+.link:focus, .footer__link:focus, .header__link:focus, .link--active:focus, .link:hover, .footer__link:hover, .header__link:hover, .link--active:hover {
   color: #2196f3;
 }
 .link--active {
@@ -97,7 +97,7 @@
   -webkit-transform: translateY(33.6px);
           transform: translateY(33.6px);
 }
-.link:hover .header__icon {
+.link:hover .header__icon, .footer__link:hover .header__icon, .header__link:hover .header__icon, .link:hover .header__icon--email, .footer__link:hover .header__icon--email, .header__link:hover .header__icon--email, .link--active:hover .header__icon, .link--active:hover .header__icon--email {
   fill: #2196f3;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -105,7 +105,8 @@
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.logo {
+.logo, .logo--white, .logo--black {
+  text-decoration: none;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   line-height: 1.19;
@@ -218,10 +219,10 @@
           column-gap: 50px;
   margin-left: auto;
 }
-.header__contact .icon {
+.header__icon, .header__icon--email {
   margin-right: 10px;
 }
-.header__contact .icon-email {
+.header__icon--email {
   margin-top: 2px;
 }
 .header__link {
@@ -362,13 +363,13 @@
   outline: none;
 }
 
-.footer .icon {
+.footer .icon, .footer .button-close__icon, .footer .icon--activities, .footer .icon--social, .footer .header__icon, .footer .header__icon--email {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   fill: #ffffff;
 }
 
-.footer .icon:hover {
+.footer .icon:hover, .footer .button-close__icon:hover, .footer .icon--activities:hover, .footer .icon--social:hover, .footer .header__icon:hover, .footer .header__icon--email:hover {
   background-color: #2196f3;
   border-radius: 50%;
   fill: #ffffff;
@@ -464,7 +465,7 @@
           transform: translateY(0);
 }
 
-.icon {
+.icon, .button-close__icon, .icon--activities, .icon--social, .header__icon, .header__icon--email {
   display: inline-block;
   fill: #afb1b8;
   -webkit-transition-property: background-color;
@@ -530,13 +531,13 @@
   border: 1px solid #2196f3;
 }
 
-.button-secondary, .button {
+.button-secondary, .button, .button--subscribe, .button--color-main {
   cursor: pointer;
   border-style: none;
   font-size: 16px;
 }
 
-.button {
+.button, .button--subscribe, .button--color-main {
   font-weight: 700;
   line-height: 1.88;
   letter-spacing: 0.06em;
@@ -552,16 +553,16 @@
   transition: background-color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid #2196f3;
 }
-.button--color-main {
+.button--color-main, .button--subscribe {
   background-color: #2196f3;
   -webkit-transition: background-color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.button--color-main:hover {
+.button--color-main:hover, .button--subscribe:hover {
   background-color: #2f303a;
   outline: none;
 }
-.button--left {
+.button--subscribe {
   padding: 0 0 0 42px;
   text-align: left;
 }

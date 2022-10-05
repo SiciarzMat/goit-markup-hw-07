@@ -1,14 +1,17 @@
 .logo {
-  font-family: 'Raleway', sans-serif;
-  @include font-atr(700,1.19,0.03em);
-  font-size: get-size('logo');
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  @include font-atr(700, 1.19, 0.03em);
+  font-size: get-size("logo");
   color: $link-text-color;
 
   &--black {
+    @extend .logo;
     color: $logo-secondary-color;
   }
 
   &--white {
+    @extend .logo;
     color: $logo-primary-color;
   }
 }

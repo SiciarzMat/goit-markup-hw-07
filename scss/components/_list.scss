@@ -1,5 +1,5 @@
 .list {
-  @include set-flex(row,center,stretch);
+  @include set-flex(row, center, stretch);
   gap: 30px;
   flex-wrap: wrap;
   list-style-type: none;
@@ -17,6 +17,7 @@
     border-radius: 4px;
   }
   &--gap {
+    @extend .list;
     column-gap: 10px;
     padding-bottom: 30px;
   }
@@ -33,7 +34,9 @@
   }
   &__item {
     background-color: $primary-background-color;
-    box-shadow: 0px 1px 3px $modal-box-shadow-primary, 0px 1px 1px $modal-box-shadow-secondary, 0px 2px 1px $modal-background-color;
+    box-shadow: 0px 1px 3px $modal-box-shadow-primary,
+      0px 1px 1px $modal-box-shadow-secondary,
+      0px 2px 1px $modal-background-color;
     border-radius: 0px 0px 4px 4px;
   }
   &__position {

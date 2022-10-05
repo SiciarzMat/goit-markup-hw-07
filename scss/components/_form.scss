@@ -33,6 +33,7 @@
   }
 
   &__text {
+    @extend .form__input;
     @include font-atr(400, 1.17, 0.01em);
     resize: none;
     height: 120px;

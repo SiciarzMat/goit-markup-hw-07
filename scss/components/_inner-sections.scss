@@ -14,6 +14,7 @@
     margin: 0 auto;
 
     &--gap {
+      @extend .section__container;
       margin-bottom: 94px;
     }
   }
@@ -43,6 +44,7 @@
   }
 
   &--gray {
+    @extend .section;
     background-color: $button-background;
     width: 100%;
     padding: 94px 0;
